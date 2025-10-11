@@ -45,12 +45,6 @@ theorem_proving:
     "OCaml",
     "Propositional logic SAT solver using the DPLL method"
   ]
-- [
-    "Typestack",
-    "https://github.com/benmandrew/typestack",
-    "OCaml",
-    "Program semantics and type system for a tiny stack-based language"
-  ]
 
 systems:
 - [
@@ -60,19 +54,16 @@ systems:
     "Undergraduate thesis project implementing Delay-Tolerant Link-State Routing, tested on the CORE network emulator"
   ]
 - [
+    "BF",
+    "https://github.com/benmandrew/bf",
+    "C, LLVM",
+    "Brainf*ck compiler frontend targeting the LLVM Intermediate Representation (IR)"
+  ]
+- [
     "TTT86",
     "/articles/tic-tac-toe-x86-assembly",
     "x86 Assembly",
     "Tic-Tac-Toe in x86 assembly, using direct syscalls"
-  ]
-- [
-    "Olzw", "/articles/ocaml-tricks-for-long-computations", "OCaml", "Lempel-Ziv-Welch (LZW) streaming compressor and decompressor for ASCII text files"
-  ]
-- [
-    "CoolSort",
-    "/articles/coolsort-or-cache-access-pattern-optimisation",
-    "C",
-    "Combining Mergesort and Insertion sort for cache-optimised sorting"
   ]
 
 graphics:
@@ -87,12 +78,6 @@ graphics:
     "/articles/js-table-renderer",
     "JavaScript",
     "3D renderer using a HTML table's cells as a pixel grid"
-  ]
-- [
-    "WaterRipple",
-    "/articles/custom-post-processing-effects-in-unity",
-    "Unity/C#",
-    "Demonstration of a water ripple post-processing screen-space effect"
   ]
 - [
     "Mirror",
@@ -117,12 +102,6 @@ graphics:
     "/articles/lux-project",
     "C++, Python",
     "Triangle mesh ray-tracer, accelerated with a bounding volume hierarchy (BVH) data structure"
-  ]
-- [
-    "Fractal3D",
-    "https://github.com/benmandrew/Fractal3D",
-    "C, GLSL",
-    "Renders 3D fractals in a fragment shader on the GPU, using signed distance functions"
   ]
 
 games:
@@ -194,7 +173,7 @@ games:
   {%- endfor -%}
 </div>
 
-## Theorem proving and Programming languages
+## Formal Methods
 
 <div class="post-list row" style="margin: auto; margin-bottom:10px">
   {%- for info in page.theorem_proving -%}
