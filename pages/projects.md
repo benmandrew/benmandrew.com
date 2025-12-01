@@ -28,6 +28,12 @@ professional:
 
 theorem_proving:
 - [
+    "CEGIW",
+    "https://github.com/benmandrew/CEGIW",
+    "Python",
+    "Counterexample-guided interval weakening, for metric temporal logic (MTL)"
+  ]
+- [
     "Cavalry",
     "/articles/cavalry",
     "OCaml",
