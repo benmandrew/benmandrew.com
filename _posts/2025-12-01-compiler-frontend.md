@@ -37,6 +37,8 @@ As an extended example, let's see how my compiler frontend compiles the followin
 > docker compose up
 > ```
 > which opens an interactive web interface at [https://localhost:8080](https://localhost:8080).
+>
+> <img src="{{ site.s3_path }}/bf/screenshot.png" width="100%" height="auto">
 
 We start with the global variables, which are visible everywhere in the program. These are `data`, which points to the front of our contiguous array of bytes, and the data pointer `dp` which we will use to dynamically index into `data`. We also declare an *external function* `putchar` that allows us to write output, which will be linked in from the C standard library by the compiler backend later.
 
