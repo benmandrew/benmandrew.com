@@ -19,6 +19,12 @@ jobs:
       - name: Build site
         run: bundle exec jekyll build
 
+      - name: Archive site
+        uses: actions/upload-artifact@v3
+        with:
+          name: site
+          path: _site/
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
@@ -27,6 +33,12 @@ jobs:
     steps:
       - name: Install rsync
         run: sudo apt-get update && sudo apt-get install -y rsync
+
+      - name: Download site artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: site
+          path: _site/
 
       - name: Deploy
         env:
